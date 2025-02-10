@@ -1,0 +1,34 @@
+Here lies notes that I take throughout my learning journer
+
+ - 'w' and 'b' essentially are the same as <Ctrl><Left> and <Ctrl><Right> respectively
+     - remember you can use (n)<Ctrl>(direction) to move 'n' words to the left or right
+ - pressing <C-d> in Command mode will show list of options (similar to <tab> in terminal)
+ - press <C-w-w> to switch between windows openned in the same neovim window
+     - <:q> to close focused window
+ - < / > (while in Normal mode) to search within a file
+
+
+
+Changes to commit in settings/'init.lua':
+
+-- key(binds/maps)
+ □ C-back -> del prev w
+ □ C-S-back -> del prev w (inc punct)
+ □ C-S-(up/down) -> start/end of file | emulate (gg/G)
+ ☑ C-(up/down) -> emulate C-(u/d)
+ □ S-(up/down) -> prev/next non-empty line
+ □ 
+ □ 
+ □ 
+
+-- other
+ □ change a keybind that already exists...
+ □ Ctrl-Backspace -> deletes prev word
+     - <C-shift-backspace> -> deletes prev word inc. punct.
+ □ switch to Normal mode whenever the window loses focus
+ □ `:w` on window-focus loss
+ ☑ change <Ctrl><Up> and <Ctrl><Down> to work just like <Ctrl>U and <Ctrl>D
+     - if last word of line: go to end of line (?)
+ □ mayyyybe set a timeout:  ` if 5(?) seconds pass with no input: switch to Normal mode `
+ □ turn off wrapscan 
+ □ 
